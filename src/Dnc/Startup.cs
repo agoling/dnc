@@ -2,14 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using AspNet.Core.Extensions;
-using AspNet.Core.Extensions.Autofac;
-using AspNet.Core.Extensions.Interceptor;
-using AspNet.Core.Extensions.Swagger;
+using AspNetCore;
+using AspNetCore.Autofac;
+using AspNetCore.Swagger;
 using Autofac;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
