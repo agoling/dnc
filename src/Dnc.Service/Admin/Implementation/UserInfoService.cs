@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Logger;
 using UtilsSharp.Standard;
 
 namespace Dnc.Service.Admin.Implementation
@@ -24,6 +25,7 @@ namespace Dnc.Service.Admin.Implementation
         public BaseResult<UserInfo> Get()
         {
             var result=new BaseResult<UserInfo>();
+            LogHelper.Info("我是测试日志");
             //查询数据库.....
             //if (false)
             //{

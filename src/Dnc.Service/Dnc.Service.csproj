@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="UtilsSharp" Version="2.1.0" />
+    <PackageReference Include="UtilsSharp.Logger" Version="1.0.0" />
   </ItemGroup>
 
 </Project>
