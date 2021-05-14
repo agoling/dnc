@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AspNetCore.MVC;
 using Dnc.Service.Admin;
 using Microsoft.AspNetCore.Mvc;
 using UtilsSharp.Standard;
@@ -11,10 +12,9 @@ namespace Dnc.Areas.Admin.Controllers
     /// <summary>
     /// Admin控制器
     /// </summary>
-    [Route("api/[area]/[controller]/[action]")]
+    [ApiExplorerSettings(GroupName = "admin")]
     [Area("Admin")]
-    [ApiController]
-    public class UserInfoController : ControllerBase
+    public class UserInfoController :BaseAreaController
     {
 
         private readonly IUserInfoService _userInfoService;

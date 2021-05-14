@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using UtilsSharp;
 
 namespace Dnc
 {
@@ -22,7 +23,9 @@ namespace Dnc
             //添加控制器服务
             services.AddControllers();
             //添加扩展服务，如果参数不填则用默认的swagger配置
-            services.AddAspNetCoreExtensions(new SwaggerDocOptions { Name = "v1", OpenApiInfo = { Title = "Dnc项目", Version = "v1", Description = "Dnc项目接口" } });
+            //swagger配置
+            AspNetCoreExtensionsConfig.SwaggerDocOptions = AppsettingsHelper.GetSection<SwaggerDocOptions>("SwaggerDocOptions");
+            services.AddAspNetCoreExtensions();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
