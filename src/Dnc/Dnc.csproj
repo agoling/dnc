@@ -5,7 +5,11 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>D:\GitHub\Project\Dnc\Dnc\Dnc.xml</DocumentationFile>
+    <DocumentationFile>D:\GitHub\Project\Dnc\src\Dnc\Dnc.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>D:\GitHub\Project\Dnc\src\Dnc\Dnc.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
