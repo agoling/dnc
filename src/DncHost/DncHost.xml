@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DncHost</name>
+    </assembly>
+    <members>
+        <member name="T:DncHost.Areas.Logins.Controllers.RecordController">
+            <summary>
+            登入记录控制器
+            </summary>
+        </member>
+        <member name="M:DncHost.Areas.Logins.Controllers.RecordController.GetRecord">
+            <summary>
+            获取记录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DncHost.Areas.Users.Controllers.UserController">
+            <summary>
+            用户控制器
+            </summary>
+        </member>
+        <member name="M:DncHost.Areas.Users.Controllers.UserController.Get">
+            <summary>
+            获取用户信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DncHost.Startup.ConfigureContainer(Autofac.ContainerBuilder)">
+            <summary>
+            依赖注入映射
+            </summary>
+            <param name="builder"></param>
+        </member>
+    </members>
+</doc>
